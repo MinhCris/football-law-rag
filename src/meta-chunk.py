@@ -48,13 +48,14 @@ import pymupdf
 
 
 # =========================================================================
-# 1. DATA MODELS
+# 1. DATA MODELS   
 # =========================================================================
 
 @dataclass
 class Span:
     """1 span = 1 đoạn text có cùng font/size/style trên cùng 1 dòng."""
     text: str
+
     font: str
     size: float
     flags: int           # bit flags: bold=16, italic=2, ...
